@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IosArchitectureDemo1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9if-yU-o1P">
+                                <rect key="frame" x="94" y="217.5" width="187" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="96"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-TY-PgC">
+                                <rect key="frame" x="75" y="78.5" width="225" height="118"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-k0-15B">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Crank"/>
+                                        <connections>
+                                            <action selector="didPressCrank:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VNq-r0-6tJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvB-mQ-QiH">
+                                        <rect key="frame" x="0.0" y="70" width="225" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="didPressStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZ6-v8-95b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-na-iJ5">
+                                <rect key="frame" x="63" y="367" width="249" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c18-fe-yr0">
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clear state 1"/>
+                                        <connections>
+                                            <action selector="didPressClearState1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LyG-d1-QGD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICw-0t-jkP">
+                                        <rect key="frame" x="0.0" y="60" width="249" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clear state 2"/>
+                                        <connections>
+                                            <action selector="didPressClearState2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azs-mH-eqt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-xO-JsM">
+                                        <rect key="frame" x="0.0" y="120" width="249" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clear service"/>
+                                        <connections>
+                                            <action selector="didPressClearService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqf-sf-uJj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrl-xR-ufP">
+                                        <rect key="frame" x="0.0" y="180" width="249" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Clear statemachine"/>
+                                        <connections>
+                                            <action selector="didPressClearStateMachine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPt-Dm-cnv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mTr-na-iJ5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="74x-f2-xFW"/>
+                            <constraint firstItem="H0v-TY-PgC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ih6-Sc-eHV"/>
+                            <constraint firstItem="H0v-TY-PgC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="SDy-h8-j1C"/>
+                            <constraint firstItem="9if-yU-o1P" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zxf-yt-6PV"/>
+                            <constraint firstItem="H0v-TY-PgC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.4" id="cPE-Uh-dbr"/>
+                            <constraint firstItem="9if-yU-o1P" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="cYX-hU-4sf"/>
+                            <constraint firstItem="9if-yU-o1P" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="feF-UI-Npp"/>
+                            <constraint firstItem="mTr-na-iJ5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.4" id="iyN-WV-AQ2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="9if-yU-o1P" id="h0m-qN-tBs"/>
+                        <outlet property="startButton" destination="uvB-mQ-QiH" id="Nfa-MY-V2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
